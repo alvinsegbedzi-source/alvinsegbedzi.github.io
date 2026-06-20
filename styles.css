@@ -1,0 +1,320 @@
+/* Reset default margins and set up the base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f5f7fa;
+    color: #212529;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+nav .nav-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav .nav-link:hover {
+    color: #0066cc;
+    background-color: #f0f4ff;
+}
+
+nav .nav-link.active {
+    color: #0066cc;
+    border-bottom: 3px solid #0066cc;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.section-block {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.content-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.content-section h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.tip-card {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tip-card h3 {
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.tip-card p {
+    margin-bottom: 0;
+    color: #495057;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.lead-text {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    color: #0066cc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #003d99;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.title-glow {
+    text-shadow: 0 0 18px rgba(0, 102, 204, 0.35), 0 0 28px rgba(0, 102, 204, 0.15);
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.75rem 1.1rem;
+    color: #0066cc;
+    text-decoration: none;
+    border-radius: 999px;
+    background-color: #edf4ff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #dbe8ff;
+    color: #003d99;
+}
+
+.content-section {
+    background-color: #f4f7fb;
+    padding: 1.75rem;
+    border-radius: 14px;
+    margin-bottom: 1.5rem;
+}
+
+.content-section h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.content-section section {
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.content-section section:last-child {
+    margin-bottom: 0;
+}
+
+/* Typography elements */
+h1, h2, h3 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Hyperlinks and clean interactive states */
+a {
+    color: #0066cc; /* Vibrant corporate blue */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* Modern button styling */
+.btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #004499;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Scroll reveal animation utility */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.title-glow {
+    text-shadow: 0 0 18px rgba(0, 102, 204, 0.35), 0 0 28px rgba(0, 102, 204, 0.15);
+}
+
+.tip-card {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.tip-card:last-child {
+  margin-bottom: 0;
+}
